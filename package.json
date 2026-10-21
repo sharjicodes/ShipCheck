@@ -1,0 +1,21 @@
+{
+  "name": "shipcheck",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @shipcheck/web",
+    "dev:api": "npm run dev --workspace @shipcheck/api",
+    "dev:worker": "npm run dev --workspace @shipcheck/worker",
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "db:generate": "npm run db:generate --workspace @shipcheck/db",
+    "db:migrate": "npm run db:migrate --workspace @shipcheck/db",
+    "db:deploy": "npm run db:deploy --workspace @shipcheck/db",
+    "db:validate": "npm run db:validate --workspace @shipcheck/db"
+  }
+}

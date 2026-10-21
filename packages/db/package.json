@@ -1,0 +1,17 @@
+{
+  "name": "@shipcheck/db",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "if [ -f ../../.env ]; then set -a && . ../../.env && set +a; fi; prisma migrate dev",
+    "db:deploy": "if [ -f ../../.env ]; then set -a && . ../../.env && set +a; fi; prisma migrate deploy",
+    "db:validate": "if [ -f ../../.env ]; then set -a && . ../../.env && set +a; fi; prisma validate"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.5.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.5.0"
+  }
+}

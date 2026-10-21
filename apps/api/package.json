@@ -1,0 +1,27 @@
+{
+  "name": "@shipcheck/api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "set -a && . ../../.env && set +a && tsx watch src/index.ts",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.2",
+    "@shipcheck/db": "*",
+    "bullmq": "^5.41.9",
+    "fastify": "^5.2.1",
+    "ioredis": "^5.6.0",
+    "ipaddr.js": "^2.2.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
