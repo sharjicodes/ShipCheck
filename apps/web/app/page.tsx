@@ -124,7 +124,10 @@ export default function Home() {
           />
           <button type="submit" disabled={busy}>{busy ? "Scanning…" : "Run free scan →"}</button>
         </form>
-        <p className="note">Public HTTP(S) websites only. Do not submit private, internal, or sensitive URLs.</p>
+        <p className="note">
+          <span>Public HTTP(S) websites only. Do not submit private, internal, or sensitive URLs.</span>
+          <a className="demo-link" href="#demo">Watch the 10-second demo ↓</a>
+        </p>
         {error && <div className="error" role="alert">{error}</div>}
       </section>
 
@@ -188,7 +191,7 @@ export default function Home() {
         </section>
       )}
 
-      <section className="report demo" aria-labelledby="demo-title">
+      <section className="report demo" id="demo" aria-labelledby="demo-title">
         <div className="report-head">
           <div>
             <h2 id="demo-title">See a real ShipCheck scan</h2>
