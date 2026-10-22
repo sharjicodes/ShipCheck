@@ -126,7 +126,7 @@ export default function Home() {
         </form>
         <p className="note">
           <span>Public HTTP(S) websites only. Do not submit private, internal, or sensitive URLs.</span>
-          <a className="demo-link" href="#demo">Watch the 10-second demo ↓</a>
+          <a className="demo-link" href="#demo">Watch the working demo ↓</a>
         </p>
         {error && <div className="error" role="alert">{error}</div>}
       </section>
