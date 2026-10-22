@@ -229,7 +229,14 @@ export default function Home() {
         )}
       </section>
 
-      <footer className="footer">ShipCheck is an independent developer tool. Automated findings are a starting point, not a substitute for manual accessibility testing.</footer>
+      <footer className="footer">
+        <span>ShipCheck is an independent developer tool. Automated findings are a starting point, not a substitute for manual accessibility testing.</span>
+        <span className="footer-credit">
+          Developed by <a href="https://sharjithaportfolio.vercel.app/" target="_blank" rel="noreferrer">Sharjith</a>
+          <span aria-hidden="true"> · </span>
+          <a href="https://sharjithaportfolio.vercel.app/" target="_blank" rel="noreferrer">Portfolio ↗</a>
+        </span>
+      </footer>
     </main>
   );
 }

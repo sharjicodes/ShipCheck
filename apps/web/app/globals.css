@@ -54,7 +54,10 @@ button:disabled { opacity: .55; cursor: wait; }
 .history-row strong { font-size: 14px; }
 .history-row small { margin-top: 5px; color: var(--muted); font-size: 12px; }
 .snippet { white-space: pre-wrap; overflow-wrap: anywhere; background: #f7f9f7; border-radius: 8px; padding: 12px; font-size: 12px; }
-.footer { color: var(--muted); font-size: 12px; margin-top: 46px; border-top: 1px solid var(--line); padding-top: 18px; }
+.footer { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px 24px; color: var(--muted); font-size: 12px; margin-top: 46px; border-top: 1px solid var(--line); padding-top: 18px; }
+.footer-credit { color: var(--ink); white-space: nowrap; }
+.footer a { color: var(--green); font-weight: 700; text-decoration: none; }
+.footer a:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (max-width: 620px) {
   .shell { padding: 18px 15px 48px; }
   .hero { padding-top: 50px; }
