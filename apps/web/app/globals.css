@@ -44,6 +44,8 @@ button:disabled { opacity: .55; cursor: wait; }
 .tag.critical { background: #fde9e8; color: #a12620; }
 .tag.minor { background: #e9f1ff; color: #244c91; }
 .empty { padding: 24px; border: 1px dashed var(--line); border-radius: 14px; color: var(--muted); text-align: center; }
+.demo-video { display: block; width: 100%; max-height: 680px; aspect-ratio: 16 / 9; object-fit: contain; margin-top: 20px; border: 1px solid var(--line); border-radius: 14px; background: #101820; }
+.demo-caption { color: var(--muted); font-size: 12px; line-height: 1.5; margin: 12px 2px 0; }
 .history-list { margin-top: 16px; }
 .history-row { display: flex; width: 100%; justify-content: space-between; align-items: center; gap: 14px; text-align: left; color: var(--ink); background: white; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 15px 2px; }
 .history-row:hover { background: #f8faf8; }

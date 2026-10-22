@@ -188,6 +188,28 @@ export default function Home() {
         </section>
       )}
 
+      <section className="report demo" aria-labelledby="demo-title">
+        <div className="report-head">
+          <div>
+            <h2 id="demo-title">See a real ShipCheck scan</h2>
+            <div className="subtle">Watch ShipCheck scan the Milo Office Time website and show its report.</div>
+          </div>
+          <span className="status">Recorded demo</span>
+        </div>
+        <video
+          className="demo-video"
+          controls
+          playsInline
+          preload="metadata"
+          poster="/office-time-accessibility-poster.png"
+          aria-label="ShipCheck scans the Milo Office Time website and displays a completed accessibility report"
+        >
+          <source src="/office-time-accessibility-demo.webm" type="video/webm" />
+          Your browser does not support embedded video. <a href="/office-time-accessibility-demo.webm" download>Download the demo video</a>.
+        </video>
+        <p className="demo-caption">Recorded from a real scan of <a href="https://office-time-flame.vercel.app/" target="_blank" rel="noreferrer">office-time-flame.vercel.app</a>. Automated results are a starting point and do not certify full accessibility conformance.</p>
+      </section>
+
       <section className="report" id="history">
         <div className="report-head">
           <div><h2>Recent scans</h2><div className="subtle">History stored by this ShipCheck instance.</div></div>
